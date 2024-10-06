@@ -1,52 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kumara Academy</title>
     </head>
 
     <body>
-        <div class="header">
-            <div class="logo kumara">
-                <a href="https://latihan-bagas.vercel.app/"><img src="Kumara Academy.png" alt="Logo" width="25%"></a>
-            </div>
-            <ul>
-                <li><a href="https://latihan-bagas.vercel.app/">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <hr>
-        </div>
+        <header>
+            <h1>Kumara Academy</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://latihan-bagas.vercel.app/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <div class="content">
-            
-            <div class="deskripsi-singkat" id="about">
+        <main>
+            <section class="deskripsi" id="about">
+                <a href="https://latihan-bagas.vercel.app/"><img src="Kumara Academy.png" alt="Logo Kumara Academy" width="20%"></a>
                 <p>Kumara Academy adalah platform kursus online yang menyediakan berbagai pelatihan di bidang teknologi, termasuk pemrograman, pembuatan website, dan pengembangan aplikasi. Dengan instruktur ahli dan materi yang selalu diperbarui, kami membantu para pelajar dari berbagai tingkat keahlian untuk menguasai keterampilan yang dibutuhkan di dunia digital saat ini. Fleksibilitas belajar di mana saja dan kapan saja memungkinkan Anda untuk mencapai tujuan karier Anda dengan mudah. Mulailah perjalanan Anda bersama kami dan wujudkan potensi Anda di dunia teknologi.</p>
-            </div>
-        </div>
+            </section>
 
-        <div class="layanan">
-            <br>
-            <h2>Rekomendasi Kelas Online</h2>
-            <h3><img src="html.png" alt="logo html" height="80px">Belajar HTML</h3>
-            <p>Kelas ini dirancang untuk membantu Anda memahami dasar-dasar HTML, bahasa markup yang menjadi fondasi dari semua halaman web. Anda akan mempelajari struktur HTML, elemen-elemen dasar, atribut, dan cara membuat halaman web yang rapi dan terstruktur. Kelas ini cocok bagi pemula yang ingin memulai karier di bidang pengembangan web.</p>
-            <br>
+            <section class="layanan">
+                <h2>Rekomendasi Kelas Online</h2>
+                <article>
+                    <table border="1" width="80%">
+                        <thead>
+                            <tr>
+                                <th>Nama</th>
+                                <th>Deskripsi</th>
+                                <th>Harga</th>
+                            </tr>
+                        </thead>
+                        <tbody align="left">
+                            <tr>
+                                <td><img src="html.png" alt="Logo HTML" height="80px"><br>Belajar HTML</td>
+                                <td>Kelas ini dirancang untuk membantu Anda memahami dasar-dasar HTML, bahasa markup yang menjadi fondasi dari semua halaman web. Anda akan mempelajari struktur HTML, elemen-elemen dasar, atribut, dan cara membuat halaman web yang rapi dan terstruktur. Kelas ini cocok bagi pemula yang ingin memulai karier di bidang pengembangan web.</td>
+                                <td>Rp200.000</td>
+                            </tr>
+                            <tr>
+                                <td><img src="css.png" alt="Logo CSS" height="80px"><br>Belajar CSS</td>
+                                <td>Pelajari cara mempercantik tampilan situs web Anda dengan CSS. Kelas ini akan membimbing Anda melalui dasar-dasar CSS, mulai dari pemahaman tentang selektor, properti, hingga teknik layout modern seperti Flexbox dan Grid. Dengan pengetahuan CSS, Anda dapat membuat desain web yang responsif dan menarik secara visual.</td>
+                                <td>Rp200.000</td>
+                            </tr>
+                            <tr>
+                                <td><img src="javascript.png" alt="Logo JavaScript" height="60px"><br>Belajar JavaScript</td>
+                                <td>Dapatkan pemahaman mendalam tentang JavaScript, bahasa pemrograman yang memungkinkan Anda menambahkan interaktivitas ke situs web. Kelas ini mencakup dasar-dasar JavaScript, seperti variabel, fungsi, loop, dan event handling, sehingga Anda dapat mulai membuat web yang dinamis dan interaktif. Cocok untuk pemula yang ingin menambah keterampilan pengembangan web mereka.</td>
+                                <td>Rp300.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </section>
 
-            <H3><img src="css.png" alt="logo css" height="80px">Belajar CSS</H3>
-            <p>Pelajari cara mempercantik tampilan situs web Anda dengan CSS. Kelas ini akan membimbing Anda melalui dasar-dasar CSS, mulai dari pemahaman tentang selektor, properti, hingga teknik layout modern seperti Flexbox dan Grid. Dengan pengetahuan CSS, Anda dapat membuat desain web yang responsif dan menarik secara visual.</p>
-            <br>
+            <section class="contact-form" id="contact">
+                <h2>Kontak Kami</h2>
+                <form action="/submit" method="post">
+                    <label>Nama:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Nama" required>
+                    <br>
+                    <label>Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <br>
+                    <label>Pesan:</label>
+                    <textarea id="pesan" name="pesan" cols="30" rows="5" placeholder="Pesan" required></textarea>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>    
+            </section>            
+        </main>
 
-            <H3><img src="javascript.png" alt="logo javascript" height="60px">Belajar JavaScript</H3>
-            <p>Dapatkan pemahaman mendalam tentang JavaScript, bahasa pemrograman yang memungkinkan Anda menambahkan interaktivitas ke situs web. Kelas ini mencakup dasar-dasar JavaScript, seperti variabel, fungsi, loop, dan event handling, sehingga Anda dapat mulai membuat web yang dinamis dan interaktif. Cocok untuk pemula yang ingin menambah keterampilan pengembangan web mereka.</p>
-        </div>
-        
-        <div class="footer" id="contact">
+        <footer>
             <hr>
-            <a href="https://latihan-bagas.vercel.app/"> <img src="Kumara Academy.png" alt="logo kumara" height="50px"></a>
-            
-            <a href="https://www.instagram.com/agas_kumara/"><img src="instagram-logo.png" alt="logo-instagram" height="50px"></a>
-
-            <a href="https://www.youtube.com/@KelasKumara"><img src="youtube.png" alt="youtube" height="50px"></a>
-
-        </div>
+            <a href="https://latihan-bagas.vercel.app/"><img src="Kumara Academy.png" alt="Logo Kumara Academy" height="50px"></a>
+            <a href="https://www.instagram.com/agas_kumara/"><img src="instagram-logo.png" alt="Logo Instagram" height="50px"></a>
+            <a href="https://www.youtube.com/@KelasKumara"><img src="youtube.png" alt="Logo YouTube" height="50px"></a>
+        </footer>
     </body>
 </html>
