@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    background-color: #007f9c;
+    padding: 10px 20px;
+}
+
+.header-logo img {
+    height: 70px;
+}
+
+/* Nav Bar */
+nav {
+    background-color: #007f9cd8;
+    padding: 10px;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-item a:hover {
+    color: black;
+}
+
+/* Deskripsi */
+.deskripsi {
+    text-align: justify;
+    padding: 20px;
+}
+
+/* Card */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3), -10px -10px 20px rgba(255, 255, 255, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.card .button {
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card .button:hover {
+    background-color: #2980b9;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 15px 15px 45px rgba(0, 0, 0, 0.4), -15px -15px 30px rgba(255, 255, 255, 0.6);
+}
+
+/* Tabel */
+.layanan h2{
+	text-align: center;
+}
+
+.tabel {
+    border-spacing: 4px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: left;
+}
+
+.tabel-header {
+    background-color: #039dc0d8;
+}
+
+.tabel-konten {
+    text-align: justify;
+}
+
+/* Form */
+.konten h1{
+	text-align: center;
+}
+form {
+    margin: 40px auto; /* Tambahkan margin pada form secara keseluruhan */
+    padding: 20px; /* Tambahkan padding dalam form */
+    width: 60%; /* Atur lebar form */
+    background-color: #f9f9f9; /* Tambahkan background form untuk kontras */
+    border-radius: 10px; /* Sedikit lengkungan pada sudut */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px; /* Tambahkan padding dalam input */
+    border: 1px solid #ccc; /* Atur border untuk input */
+    border-radius: 5px; /* Beri sudut yang lebih halus */
+}
+
+
+.form-group{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.form-group label{
+	display:block;
+	font-size: 20px;
+	color: rgb(29, 29, 29);
+}
+
+.form-group input{
+	display:block;
+	margin-top:10px;
+	width:60%;
+}
+
+.form-group textarea{
+	display:block;
+	margin-top:10px;
+	height:200px;
+	width:60%;
+}
+
+.btn{
+	width:150px;
+	height:50px;
+	font-size:20px;
+	font-weight: bold;
+	color:aliceblue;
+	background-color: #3498db;
+	border:0px;
+	border-radius:20px;
+	cursor:pointer;
+}
+
+.btn:hover{
+	background-color: #2980b9;
+}
+
+.btn:active{
+	background-color: black;
+}
+
+/* Footer */
+footer {
+    background-color: #007f9c;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .social-icons {
+    margin: 10
