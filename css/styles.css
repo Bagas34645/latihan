@@ -10,6 +10,8 @@
 
 /* Header */
 header {
+    position: sticky;
+    top: 0;
     display: flex;
     background-color: #007f9c;
     padding: 10px 20px;
@@ -21,6 +23,8 @@ header {
 
 /* Nav Bar */
 nav {
+    position: sticky;
+    top: 97px;
     background-color: #007f9cd8;
     padding: 10px;
 }
@@ -117,7 +121,7 @@ nav {
     border-spacing: 4px;
     margin: 20px auto;
     width: 80%;
-    text-align: left;
+    text-align: center;
 }
 
 .tabel-header {
