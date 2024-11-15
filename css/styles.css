@@ -13,6 +13,10 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
+    position: fixed; /* Tetap di posisi layar */
+    width: 100%; /* Memastikan lebar nav sesuai layar */
+    top: 0; /* Menempel di bagian atas */
+    z-index: 1000; /* Memastikan nav berada di atas elemen lain */
   }
   
   nav ul {
@@ -48,7 +52,7 @@ nav {
   }
   
   main {
-    padding-top: 5rem;
+    padding-top: 100px;
   }
   
   @media only screen and (max-width: 768px) {
