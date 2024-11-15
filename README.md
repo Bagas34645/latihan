@@ -1,2 +1,1 @@
-# latihan
-# latihan
+https://latihan-bagas.vercel.app/
