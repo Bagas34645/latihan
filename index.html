@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kumara Academy</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
-    <header>
-        <div class="header-logo">
-            <a href="index.html"><img src="img/Kumara Academy Putih.png" alt="Logo Kumara Academy"></a>
-        </div>
-    </header>
-
     <nav>
-        <ul class="nav">
+        <div class="header">
+            <a href="index.html"><img src="img/Kumara Academy Putih.png" alt="header-logo"/></a>
+            
+        </div>
+        <div id="menu-icon" class="menu-icon">
+          <i class="ph-fill ph-list"></i>
+        </div>
+        <ul id="menu-list" class="hidden">
             <li class="nav-item"><a href="index.html">Home</a></li>
             <li class="nav-item"><a href="#about">About</a></li>
             <li class="nav-item"><a href="kontak.html">Contact</a></li>
         </ul>
-    </nav>
+      </nav>
 
     <main>
         <section class="deskripsi" id="about">
@@ -88,6 +90,8 @@
         </section>
     </main>
 
+    <script src="/script.js"></script>
+
     <footer>
         <div class="social-icons">
             <a href="index.html"><img src="img/Kumara Academy Hitam Putih.png" alt="Logo Kumara Academy" height="50px"></a>
@@ -95,6 +99,7 @@
             <a href="https://www.youtube.com/@KelasKumara"><img src="img/youtube.png" alt="Logo YouTube" height="50px"></a>
         </div>
         <p>&copy; 2024 Kumara Academy.</p>
+        <p>Jl. Cereme No 4 Mangkukusuman Kota Tegal</p>
     </footer>
 </body>
 </html>
